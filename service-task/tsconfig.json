@@ -1,0 +1,44 @@
+{
+	// "compilerOptions": {
+	// 	"allowJs": true,
+	// 	"resolveJsonModule": true,
+	// 	"experimentalDecorators": true,
+	// 	"module": "commonjs",
+	// 	"esModuleInterop": true,
+	// 	"noImplicitAny": false,
+	// 	"removeComments": true,
+	// 	"preserveConstEnums": true,
+	// 	"emitDecoratorMetadata": true,
+	// 	"allowSyntheticDefaultImports": true,
+	// 	"sourceMap": true,
+	// 	"pretty": true,
+	// 	"target": "es6",
+	// 	"outDir": "dist",
+	// 	"skipLibCheck": true
+	// },
+	"compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false
+  },
+	// "include": ["./**/*"],
+	// "exclude": [
+	// 	"node_modules/**/*",
+	// 	"test",
+	// 	"dist"
+	// ]
+}

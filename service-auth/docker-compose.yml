@@ -1,0 +1,31 @@
+version: "3.3"
+
+services:
+  nats:
+      image: 'nats:latest'
+      # networks:
+      # - internal
+      # entrypoint: "/gnatsd -DV"
+      # restart: always
+      expose:
+        - "4222"
+      ports:
+        - "4222:4222"
+      hostname: nats-server
+
+  gatewayservice:
+    build:
+      context: .
+    # image: gatewayservice
+    # entrypoint: /services/api.server
+    links:
+      - nats
+    env_file: docker-compose.env
+    depends_on:
+      - nats
+
+# networks:
+#   internal:
+      
+
+
